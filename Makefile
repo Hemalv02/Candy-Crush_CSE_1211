@@ -4,8 +4,11 @@
 
 # Compiler settings - Can be customized.
 CC = g++
-CXXFLAGS = -std=c++17 -IC:\SDL2\include -I.\include -LC:\SDL2\lib -Wall
-LDFLAGS =  -lmingw32 -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image
+#CXXFLAGS = -std=c++17 -IC:\SDL2\include -I.\include -LC:\SDL2\lib -Wall
+#LDFLAGS =  -lmingw32 -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image
+
+CXXFLAGS = -std=c++17 -I/usr/include -I./include -L/usr/lib -Wall
+LDFLAGS =  -lSDL2main -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image
 
 # Makefile settings - Can be customized.
 APPNAME = candy
